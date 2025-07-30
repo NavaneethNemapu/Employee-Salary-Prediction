@@ -30,8 +30,8 @@ sudo systemctl enable mysql
 ### Create Database:
 1. Log into MySQL:
 ```bash
-mysql -u suhas -p
-# Enter password: Suhas@1234
+mysql -u navaneeth -p
+# Enter password: Navaneeth@1234
 ```
 
 2. Create the database:
@@ -95,14 +95,14 @@ cd employee-salary-prediction
 ## Step 5: Verify Database Connection
 
 The application is pre-configured with your MySQL credentials:
-- **Username**: suhas
-- **Password**: Suhas@1234
+- **Username**: navaneeth
+- **Password**: Navaneeth@1234
 - **Database**: employee_salary_db
 - **Host**: localhost
 
 If you need to change these, edit the `app.py` file, line 29:
 ```python
-database_url = "mysql+pymysql://suhas:Suhas%401234@localhost/employee_salary_db"
+database_url = "mysql+pymysql://navaneeth:Navaneeth%401234@localhost/employee_salary_db"
 ```
 
 ## Step 6: Run the Application
@@ -147,8 +147,8 @@ http://localhost:5000
 ### Database Connection Issues:
 ```bash
 # Test MySQL connection
-mysql -u suhas -p -h localhost
-# Enter password: Suhas@1234
+mysql -u navaneeth -p -h localhost
+# Enter password: Navaneeth@1234
 
 # If connection fails, check:
 # 1. MySQL server is running
